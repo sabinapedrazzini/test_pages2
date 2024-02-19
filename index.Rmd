@@ -2,6 +2,8 @@
 title: "guide website"
 author: "Sabina Pedrazzini"
 output: html_document
+email_adress: sabina.pedrazzini@unibe.ch
+github_repo: https://github.com/sabinapedrazzini
 ---
 
 # from R Markdown to webpage: basics
@@ -16,6 +18,8 @@ output: html_document
 
 a css chunk will allow to change the appearance of the website
 
+in the website, right-clic \> inspect will opens the code for the different elements, so that it is easy to rely the code with the element + modify it in the css chunk
+
 ```{css echo=FALSE}
 .author, .title{
   display: none;
@@ -25,3 +29,13 @@ body{
   color: deeppink;
 }
 ```
+
+# hyperlink
+
+-   text to display in square brackets
+
+-   link/email in normal brackets (they have to be in the yml)
+
+[githubwebsite](`r rmarkdown::metadata$guthub_repo`)
+
+[email](mailto:`r rmarkdown::metadata$email_adress`)
