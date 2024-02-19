@@ -17,8 +17,11 @@ output: html_document
 a css chunk will allow to change the appearance of the website
 
 ```{css echo=FALSE}
+.author, .title{
+  display: none;
+}
 body{
-  background: yellow;
-  color: blue;
+  background: aliceblue;
+  color: deeppink;
 }
 ```
