@@ -45,7 +45,7 @@ body{
 
 # date
 
-```{r}
+```{r warning=FALSE}
 library(lubridate)
 ```
 
