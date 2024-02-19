@@ -16,8 +16,7 @@ output: html_document
 
 a css chunk will allow to change the appearance of the website
 
-``` css
-{css echo=FALSE}
+```{css echo=FALSE}
 body{
   background: yellow;
   color: blue;
