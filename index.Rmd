@@ -16,17 +16,20 @@ github_repo: https://github.com/sabinapedrazzini
 
 # change the styling
 
-a css chunk will allow to change the appearance of the website
+a css chunk will allow to change the appearance of the website (put echo=FALSE in the chunk option to avoid displaying it in the website)
 
 in the website, right-clic \> inspect will opens the code for the different elements, so that it is easy to rely the code with the element + modify it in the css chunk
 
-```{css echo=FALSE}
+vw for font-size adapts the size to the size of the window
+
+```{css}
 .author, .title{
   display: none;
 }
 body{
   background: aliceblue;
   color: deeppink;
+  font-size: 2vw;
 }
 ```
 
@@ -39,3 +42,11 @@ body{
 [githubwebsite](`r rmarkdown::metadata$guthub_repo`)
 
 [email](mailto:`r rmarkdown::metadata$email_adress`)
+
+# date
+
+```{r}
+library(lubridate)
+```
+
+`r today()` =\> this will display the date of the day without needing to modify it

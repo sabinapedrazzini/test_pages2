@@ -369,10 +369,24 @@ website</li>
 </div>
 <div id="change-the-styling" class="section level1">
 <h1>change the styling</h1>
-<p>a css chunk will allow to change the appearance of the website</p>
+<p>a css chunk will allow to change the appearance of the website (put
+echo=FALSE in the chunk option to avoid displaying it in the
+website)</p>
 <p>in the website, right-clic &gt; inspect will opens the code for the
 different elements, so that it is easy to rely the code with the element
 + modify it in the css chunk</p>
+<p>vw for font-size adapts the size to the size of the window</p>
+<pre class="css"><code>.author, .title{
+  display: none;
+}
+body{
+  background: aliceblue;
+  color: deeppink;
+  font-size: 2vw;
+}
+title1{
+font-size: 4vw;
+}</code></pre>
 <style type="text/css">
 .author, .title{
 display: none;
@@ -380,6 +394,10 @@ display: none;
 body{
 background: aliceblue;
 color: deeppink;
+font-size: 2vw;
+}
+title1{
+font-size: 4vw;
 }
 </style>
 </div>
@@ -392,6 +410,18 @@ yml)</p></li>
 </ul>
 <p><a href>githubwebsite</a></p>
 <p><a href="mailto:sabina.pedrazzini@unibe.ch">email</a></p>
+</div>
+<div id="date" class="section level1">
+<h1>date</h1>
+<pre class="r"><code>library(lubridate)</code></pre>
+<pre><code>## Warning: package &#39;lubridate&#39; was built under R version 4.3.2</code></pre>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     date, intersect, setdiff, union</code></pre>
+<p>2024-02-19 =&gt; this will display the date of the day without
+needing to modify it</p>
 </div>
 
 
