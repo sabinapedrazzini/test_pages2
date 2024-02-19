@@ -1,0 +1,21 @@
+---
+title: "guide website"
+author: "Sabina Pedrazzini"
+output: html_document
+---
+
+# from R Markdown to webpage: basics
+
+1.  Create a git repo for the project
+2.  Create a Rmd file called index.Rmd =\> this is what will be displayed on the main page of the website
+3.  In github, go to Setting \> Pages and activate it
+4.  This will create a link toward the website
+5.  Modify the index file on the main branch will modify the website
+
+# change the styling
+
+a css chunk will allow to change the appearance of the website
+
+```{css}
+
+```
