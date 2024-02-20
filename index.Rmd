@@ -29,7 +29,16 @@ vw for font-size adapts the size to the size of the window
 body{
   background: aliceblue;
   color: deeppink;
-  font-size: 2vw;
+  font-family: garamond;
+  font-size: 1.5vw;
+}
+h1{
+  color: green;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration-line: overline;
+  text-decoration-color: purple;
+  text-decoration-style: solid; 
 }
 ```
 
@@ -39,13 +48,13 @@ body{
 
 -   link/email in normal brackets (they have to be in the yml)
 
-[githubwebsite](`r rmarkdown::metadata$guthub_repo`)
+[githubwebsite](%60r%20rmarkdown::metadata$guthub_repo%60)
 
-[email](mailto:`r rmarkdown::metadata$email_adress`)
+[email](mailto:%60r%20rmarkdown::metadata$email_adress%60)
 
 # date
 
-```{r warning=FALSE}
+```{r warning=FALSE, include=FALSE}
 library(lubridate)
 ```
 

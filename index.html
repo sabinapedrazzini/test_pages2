@@ -382,7 +382,16 @@ different elements, so that it is easy to rely the code with the element
 body{
   background: aliceblue;
   color: deeppink;
-  font-size: 2vw;
+  font-family: garamond;
+  font-size: 1.5vw;
+}
+h1{
+  color: green;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration-line: overline;
+  text-decoration-color: purple;
+  text-decoration-style: solid; 
 }</code></pre>
 <style type="text/css">
 .author, .title{
@@ -391,8 +400,16 @@ display: none;
 body{
 background: aliceblue;
 color: deeppink;
-font-size: 2vw;
+font-family: garamond;
+font-size: 1.5vw;
 }
+h1{
+color: green;
+font-size: 3vw;
+text-align: center;
+text-decoration-line: overline;
+text-decoration-color: purple;
+text-decoration-style: solid; }
 </style>
 </div>
 <div id="hyperlink" class="section level1">
@@ -402,18 +419,12 @@ font-size: 2vw;
 <li><p>link/email in normal brackets (they have to be in the
 yml)</p></li>
 </ul>
-<p><a href>githubwebsite</a></p>
-<p><a href="mailto:sabina.pedrazzini@unibe.ch">email</a></p>
+<p><a href="%60r%20rmarkdown::metadata$guthub_repo%60">githubwebsite</a></p>
+<p><a href="mailto:%60r%20rmarkdown::metadata$email_adress%60">email</a></p>
 </div>
 <div id="date" class="section level1">
 <h1>date</h1>
-<pre class="r"><code>library(lubridate)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;lubridate&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     date, intersect, setdiff, union</code></pre>
-<p>2024-02-19 =&gt; this will display the date of the day without
+<p>2024-02-20 =&gt; this will display the date of the day without
 needing to modify it</p>
 </div>
 
